@@ -1,0 +1,3 @@
+lid,name,lat,lon,value,pe,ts,dur,obstime,zonenum,ffg,ratio,topperformer
+NPOL1,North Pole,90.00,00.00,0.00,RR,ts,1001,00-00-0000 00:00:00/00-00-0000 00:00:00,NCZ000,100.00,0,None
+C0041,Brunswick,31.24,-81.5,0.01,PC,RZ,0,Precip Acc 2018-06-29 01:52:07Z / Precip Acc 2018-06-29 02:12:08Z,9999,9999,9999,None

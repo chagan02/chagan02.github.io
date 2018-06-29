@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#topcontainer{position:absolute;display:table;bottom:82%;height:18%;width:100%;border:1px solid #000000;border-radius:5px;}
+#precipinterval{display:table-cell;width:24%;height:100%;border-right:2px solid #000000;vertical-align:top;text-align:center;}
+#basinsettings{display:table-cell;width:24%;height:100%;border-right:2px solid #000000;vertical-align:top;text-align:center;}
+#maplayers{display:table-cell;width:34%;height:100%;border-right:2px solid #000000;vertical-align:top;text-align:center;}
+#geolocate{display:table-cell;width:14%;height:100%;border-right:2px solid #000000;vertical-align:top;text-align:center;}
+#precipboxescolumn{display:inline-block;vertical-align:top;padding-top:1px;}
+#basinsboxescolumn{display:inline-block;vertical-align:top;padding-top:1px;}
+#columnone{position:relative;width:25%;float:left;text-align:left;}
+#columntwo{position:relative;width:25%;float:left;text-align:left;}
+#columnthree{position:relative;width:25%;float:left;text-align:left;}
+#columnfour{position:relative;width:25%;float:left;text-align:left;}
+
+#mapcontrols{position:absolute;bottom:79%;height:3%;width:100%;text-align:center;}
+#tabscontainer{position:absolute;bottom:75%;height:3%;width:100%;display: inline-block;}
+#mapscontainer{position:absolute;bottom:0%;height:75%;width:100%;}
+
+#MapContent1{position:relative;display:inline-block;float:left;width: calc(50% - 1px);height:100%;border-right:1px solid #000000;z-index:100;}
+#BasinTable1{position:relative;display:inline-block;float:left;width: calc(50% - 1px);height:100%;border-right:1px solid #000000;overflow-y: scroll;overflow-x: hidden;text-shadow: -1px 0 white,0 1px white,1px 0 white,0 -1px white;}
+#RiverTable1{position:relative;display:inline-block;float:left;width: calc(50% - 1px);height:100%;border-right:1px solid #000000;overflow-y: scroll;overflow-x: hidden;text-shadow: -1px 0 white,0 1px white,1px 0 white,0 -1px white;}
+#SitAware1{position:relative;display:inline-block;float:left;width: calc(50% - 1px);height:100%;border-right:1px solid #000000;overflow: hidden;}
+
+#MapContent2{position:relative;display:inline-block;float:right;width: calc(50% - 1px);height:100%;border-left:1px solid #000000;z-index:100;}
+#BasinTable2{position:relative;display:inline-block;float:right;width: calc(50% - 1px);height:100%;border-left:1px solid #000000;overflow-y: scroll;overflow-x: hidden;text-shadow: -1px 0 white,0 1px white,1px 0 white,0 -1px white;}
+#RiverTable2{position:relative;display:inline-block;float:right;width: calc(50% - 1px);height:100%;border-left:1px solid #000000;overflow-y: scroll;overflow-x: hidden;text-shadow: -1px 0 white,0 1px white,1px 0 white,0 -1px white;}
+#SitAware2{position:relative;display:inline-block;float:right;width: calc(50% - 1px);height:100%;border-left:1px solid #000000;overflow: hidden;}
+
+TABLE{ table-layout: fixed; width: calc(100% - 1px);}
+
+#BasemapToggle1{position: absolute;top:5px;right: 20px;z-index: 50;}
+#BasemapToggle2{position: absolute;top:5px;right: 20px;z-index: 50;}
+
+.BUTTONS{
+text-align: center;
+font: bold 8px Arial;
+}
+.boxes{
+text-align:center;
+}
+
+#slider{background:#99FFFF;margin-left:20px;margin-right:20px;margin-top:0px;margin-bottom:0px;}
+#slider2{background:#99FFFF;margin-left:20px;margin-right:20px;margin-top:0px;margin-bottom:0px;}
+
+.ui-slider .ui-slider-handle {
+    height: 11px !important;
+	}
+.ui-slider {
+    height: 3px !important;
+	}
+
+html {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+	overflow:hidden;
+    font-family:"Helvetica";
+  }
+
+body {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#091627+0,10253f+25,207cca+75,8eb4e3+100 */
+background: #091627; /* Old browsers */
+background: -moz-linear-gradient(top,  #091627 0%, #10253f 25%, #207cca 75%, #8eb4e3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #091627 0%,#10253f 25%,#207cca 75%,#8eb4e3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #091627 0%,#10253f 25%,#207cca 75%,#8eb4e3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091627', endColorstr='#8eb4e3',GradientType=0 ); /* IE6-9 */
+
+  height:100% !important;
+  width:100%;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  font-family:"Helvetica";
+} 
+
+h3 {position:relative;color:#99FFFF;font-size: 15px;font-weight: bold;top:0px;bottom:0px;margin-top:1px;margin-bottom:3px;}
+
+/*CSS for Tabs*/
+/* Style the list */
+ul.tab1 {
+	float:left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	width: 50%;
+	text-align:center;
+}
+
+/* Float the list items side by side */
+ul.tab1 li {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	border:1px solid #3300FF;
+	border-radius:5px;
+	background:#99FFFF;
+	margin-bottom:2px;
+	}
+
+/* Style the links inside the list items */
+ul.tab1 li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+	width: 100%;
+}
+
+/* Change background color of links on hover */
+ul.tab1 li a:hover {}
+
+/* Create an active/current tablink class */
+ul.tab1 li a:focus, .active {background-color:yellow;}
+
+/* Style the tab content */
+.tabcontent1 {
+    display: none;
+}
+
+ul.tab2 {
+	float:right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	width: 50%;
+	text-align:center;
+}
+
+/* Float the list items side by side */
+ul.tab2 li {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	border:1px solid #3300FF;
+	border-radius:5px;
+	background:#99FFFF;
+	margin-bottom:2px;
+	}
+
+/* Style the links inside the list items */
+ul.tab2 li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+	width: 100%;
+}
+
+/* Change background color of links on hover */
+ul.tab2 li a:hover {}
+
+/* Create an active/current tablink class */
+ul.tab2 li a:focus, .active {background-color:yellow;}
+
+/* Style the tab content */
+.tabcontent2 {
+    display: none;
+}
+
+#RiverTable1 TD img{
+display:none;
+}
+
+#RiverTable1 TD:hover img{
+position:fixed;
+display: inline;
+top:25%;
+right:1px;
+height:75%;
+width:50%;
+z-index:101;
+}
+
+#RiverTable2 TD img{
+display:none;
+}
+
+#RiverTable2 TD:hover img{
+position:fixed;
+display: inline;
+top:25%;
+left:1px;
+height:75%;
+width:50%;
+z-index:102;
+}
